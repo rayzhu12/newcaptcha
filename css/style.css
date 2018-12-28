@@ -7,3 +7,8 @@ body {
 p#id {
     font-style: italic;
 }
+a#inspo {
+    position: absolute; 
+    bottom: 0;
+    right: 0;
+}
