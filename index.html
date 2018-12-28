@@ -2,6 +2,7 @@
 
 <html>
 <head>
+    <script src=js/script.js> </script>
     <title>CAPTCHA</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
@@ -10,17 +11,9 @@
     <p id="id">CAPTCHA:
     <p>What was the last secret you were entrusted with?
     <form>
-        <input type="text" id="captcha" value=""/><br>
-<!--        <input type="submit" value="Submit" onclick="getValue()">-->
+        <input type="text" id="captcha" value=""/>
     </form>
     <button onclick="getValue()">Submit</button>
 <p id="display"></p>
-<script>
-function getValue() {
-    var display = document.getElementById('display');
-    var captcha = document.getElementById('captcha').value;
-    display.innerHTML=captcha;
-}
-</script>
 </body>
 </html>
