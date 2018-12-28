@@ -7,12 +7,20 @@
 </head>
 <body>
     <h1>Please verify you are a human for access:</h1>
-    <p>CAPTCHA:</p>
-    <p>What was the last secret you were entrusted with?</p>
+    <p id="id">CAPTCHA:
+    <p>What was the last secret you were entrusted with?
     <form>
-        <input type="text" name="captcha"><br>
-        <input type="submit" value="Submit">
+        <input type="text" id="captcha" value=""/><br>
+<!--        <input type="submit" value="Submit" onclick="getValue()">-->
     </form>
-<!--    <button>Submit</button>-->
+    <button onclick="getValue()">Submit</button>
+<p id="display"></p>
+<script>
+function getValue() {
+    var display = document.getElementById('display');
+    var captcha = document.getElementById('captcha').value;
+    display.innerHTML=captcha;
+}
+</script>
 </body>
 </html>
